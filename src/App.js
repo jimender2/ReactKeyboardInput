@@ -1,22 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import KeyboardComponent from './components/keyboardComponent'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <KeyboardComponent />
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Simple React App to demonstrate the use of window event listeners.<br />
+          The keyboard component is a simple component that listens for keypresses and updates the state of the text field.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
